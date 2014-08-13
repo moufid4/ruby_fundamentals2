@@ -22,3 +22,12 @@ cohort_display(new_students)
 # display all the cohort names with the keys Method
 puts new_students.keys.to_s
 
+
+#function to iterate through hash and increase cohort numbers by 5%
+def increase(new_students)
+new_students.each do |cohort, number|
+	new_students[cohort] = number * 1.05
+end
+end
+increase(new_students)
+cohort_display(new_students)
