@@ -43,9 +43,10 @@ add_or_remove()
 $grocery_list.each do |list|
     puts "* #{list}"
 
-#Ask the user if he wants the number of items in the list
     
 end
+
+#Ask the user if he wants the number of items in the list
 def items_count()
     puts "Would like to have the number of items in your list?"
     number_item_question = gets.chomp
@@ -53,10 +54,31 @@ def items_count()
         puts "#{$grocery_list.count}"
         elsif number_item_question == "n" || number_item_question == "N"
             return
-            
+
             
 end
 
 end
 
 items_count()
+
+# Function to check if we have bananas in the list
+def check_bananas()
+    puts "Check if the list contains bananas?"
+    answer_bananas = gets.chomp
+
+        if answer_bananas == "y" || answer_bananas == "Y" 
+         
+            if $grocery_list.include? 'bananas'
+                puts "You don't need to pick up bananas today."
+            else
+                puts "You need to pick up bananas today."                
+            end
+
+        
+        end
+
+end
+check_bananas()
+
+
