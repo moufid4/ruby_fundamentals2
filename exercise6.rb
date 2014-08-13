@@ -81,4 +81,8 @@ def check_bananas()
 end
 check_bananas()
 
+# Display the second item in the list
+puts "The second item in the list is : #{$grocery_list[1]}"
 
+# Reorder the list
+puts "#{$grocery_list}"
