@@ -14,6 +14,11 @@ end
 cohort_display(new_students)
 
 
-new_students = {:cohort4 => 43}
+new_students[:cohort4] = 43
 cohort_display(new_students)
 	
+
+
+# display all the cohort names with the keys Method
+puts new_students.keys.to_s
+
