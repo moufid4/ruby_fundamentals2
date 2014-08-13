@@ -11,6 +11,9 @@ def cohort_display(students)
   end
 end
 
-
-
 cohort_display(new_students)
+
+
+new_students = {:cohort4 => 43}
+cohort_display(new_students)
+	
