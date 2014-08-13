@@ -31,3 +31,7 @@ end
 end
 increase(new_students)
 cohort_display(new_students)
+
+#delete the second cohort and display the cohort_display
+new_students.delete(:cohort2)
+cohort_display(new_students)
