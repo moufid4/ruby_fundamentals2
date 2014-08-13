@@ -86,3 +86,7 @@ puts "The second item in the list is : #{$grocery_list[1]}"
 
 # Reorder the list
 puts "#{$grocery_list}"
+
+# Delete the salmon from the list and show it
+$grocery_list.delete("salmon")
+puts "#{$grocery_list}"
