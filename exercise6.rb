@@ -1,6 +1,7 @@
 $grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 
 
+
 #Function to add new items to the list
 def add_item()
 puts "Please enter the name of the item you want to add :"
@@ -9,12 +10,14 @@ $grocery_list << item_name
 end
 
 
+
 #Function to remove items from the list
 def remove_item()
 puts "Please enter the name of the item you want to remove :"
 item_name = gets.chomp
 $grocery_list.delete("#{item_name}")
 end
+
 
 
 #Function to ask the user if he/she wants to add/remove items
@@ -84,13 +87,13 @@ end
 
 check_bananas()
 
+
 # Display the second item in the list
 puts "The second item in the list is : #{$grocery_list[1]}"
 
 
 # Reorder the list
 puts "#{$grocery_list}"
-
 
 # Delete the salmon from the list and show it
 $grocery_list.delete("salmon")
