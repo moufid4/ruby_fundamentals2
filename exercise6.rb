@@ -23,22 +23,40 @@ def add_or_remove()
 puts "Do you want to add/remove items (Y/N)"
 answer = gets.chomp
        if answer == "y" || answer == "Y"
-        puts "Add or Remove (A/R)"
-        answer_add_or_remove = gets.chomp
+            puts "Add or Remove (A/R)"
+            answer_add_or_remove = gets.chomp
+
             if answer_add_or_remove == "a" || answer_add_or_remove == "A"
         add_item()
-            elsif answer_add_or_remove == "r" || answer_add_or_remove = "R"
+            elsif answer_add_or_remove == "r" || answer_add_or_remove == "R"
         remove_item()
-         end
-    #check here ...   
+            end 
 
-    elsif answer == "n" || answer == "N"
+        elsif answer == "n" || answer == "N"
         puts ""
-     end
+        end
+        
 end
 
 add_or_remove()
 
 $grocery_list.each do |list|
     puts "* #{list}"
-    end
+
+#Ask the user if he wants the number of items in the list
+    
+end
+def items_count()
+    puts "Would like to have the number of items in your list?"
+    number_item_question = gets.chomp
+        if number_item_question == "y" || number_item_question == "Y"
+        puts "#{$grocery_list.count}"
+        elsif number_item_question == "n" || number_item_question == "N"
+            return
+            
+            
+end
+
+end
+
+items_count()
